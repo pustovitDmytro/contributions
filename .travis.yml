@@ -6,8 +6,8 @@ branches:
     travis
 install:
   - "sh install.sh"
+  - "sh build.sh"
 jobs:
   include:
     - stage: deploy
-      script: "sh build.sh"
       script: "sh deploy.sh"
