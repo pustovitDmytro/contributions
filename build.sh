@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
-sh tmp/git.sh
+
+date '+%A (%e %B)' >> README.md
+# sh tmp/git.sh
 
 echo 'done!'
