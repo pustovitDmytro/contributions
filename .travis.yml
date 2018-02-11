@@ -8,7 +8,6 @@ install:
   - "sh install.sh"
 jobs:
   include:
-    - stage: test
-      script: "sh build.sh"
     - stage: deploy
+      script: "sh build.sh"
       script: "sh deploy.sh"
