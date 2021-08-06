@@ -5,7 +5,7 @@ git remote add origin https://pustovitDmytro:$token@github.com/pustovitDmytro/co
 date '+%A (%e %B)' >> README.md
 git add .
 git commit -m "Build $GITHUB_RUN_NUMBER pushed"
-git branch -m gh_actions_tmp gh_actions_deploy
+git branch -M gh_actions_tmp gh_actions_deploy
 curl -X PATCH \
   https://api.github.com/repos/pustovitDmytro/contributions \
   -H "Authorization: token $token" \
